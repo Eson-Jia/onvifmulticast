@@ -1,0 +1,15 @@
+{
+    "name": "onvifdisc",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+        "server": "node server.js",
+        "client": "node client.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "uuid": "^3.3.2"
+    }
+}
