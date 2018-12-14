@@ -15,32 +15,3 @@
         </Probe>
     </Body>
 </Envelope>
-
-
-<?xml version="1.0" encoding="utf-8"?>
-<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" 
-    xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" 
-    xmlns:wsd="http://schemas.xmlsoap.org/ws/2005/04/discovery" 
-    xmlns:dn="http://www.onvif.org/ver10/network/wsdl" 
-    xmlns:tds="http://www.onvif.org/ver10/device/wsdl">
-    <soap:Header>
-        <wsa:Action>http://schemas.xmlsoap.org/ws/2005/04/discovery/ProbeMatches</wsa:Action>
-        <wsa:MessageID>uuid:b8d75592-feee-11e8-9d68-d35cea81e83d</wsa:MessageID>
-        <wsa:RelatesTo>uuid:637cf8b5-47a7-46ff-8fa8-07d23b6935bf</wsa:RelatesTo>
-        <wsa:To>http://schemas.xmlsoap.org/ws/2004/08/addressing/role/anonymous</wsa:To>
-        <wsd:AppSequence InstanceId="1544716189" MessageNumber="451624"/>
-    </soap:Header>
-    <soap:Body>
-        <wsd:ProbeMatches>
-            <wsd:ProbeMatch>
-                <wsa:EndpointReference>
-                    <wsa:Address>urn:uuid:30ccd079-1a3b-4969-babb-78b2b9963d33</wsa:Address>
-                </wsa:EndpointReference>
-                <wsd:Types>dn:NetworkVideoTransmitter tds:Device</wsd:Types>
-                <wsd:Scopes>onvif://www.onvif.org/type/video_encoder onvif://www.onvif.org/type/ptz onvif://www.onvif.org/type/audio_encoder onvif://www.onvif.org/hardware/DS-8616N-K8 onvif://www.onvif.org/Profile/Streaming onvif://www.onvif.org/Profile/G onvif://www.onvif.org/location/country/china onvif://www.onvif.org/name/Network%20Video%20Recorder onvif://www.onvif.org/type/Network%20Video%20Storage </wsd:Scopes>
-                <wsd:XAddrs>http://192.168.1.169:80/onvif/device_service</wsd:XAddrs>
-                <wsd:MetadataVersion>10</wsd:MetadataVersion>
-            </wsd:ProbeMatch>
-        </wsd:ProbeMatches>
-    </soap:Body>
-</soap:Envelope>
