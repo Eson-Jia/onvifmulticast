@@ -21,6 +21,8 @@ clientSocket.on('error', (err) => {
 clientSocket.bind(() => {
     const { address, port } = clientSocket.address();
     console.log(`address:${address},port:${port}`);
+    clientSocket.setMulticastInterface('0.0.0.0');
+    //https://nodejs.org/dist/latest-v10.x/docs/api/dgram.html#dgram_call_results
     clientSocket.send(content, 3702, '239.255.255.250', (err, num) => {
         if (err) {
             console.log(err);
